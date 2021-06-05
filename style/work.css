@@ -1,0 +1,328 @@
+.menu_show a:nth-child(1):after{
+	left: 0px;
+}
+
+.work{
+	top: 100px;
+	height: 3700px;
+	text-align: left;
+}
+
+
+.work h2{
+	margin-left: 150px;
+	margin-top: 100px;
+	letter-spacing: 2px;
+	font-size: 3.5em;
+	transition-delay: 0s;
+}
+
+.work p{
+	transition-delay: 0.3s;
+	margin-left: 200px;
+	letter-spacing: 5px;
+}
+
+.workBoxes h2,
+.workBoxes p{
+	margin: 0;
+	z-index: 3;
+	transition: all ease 0.8s;
+	opacity: 0;
+}
+
+.element_show  p{
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+.element_show h2{
+	opacity: 1;
+	transition-delay: 0.7s;
+}
+.workBoxes{
+	width: 100%;
+	top: 50px;
+	height: 3400px;
+}
+.workBoxes a:nth-child(odd):after,
+.workBoxes a:nth-child(odd):before{
+	content: '';
+	position: absolute;
+	left: -25%;
+	top: 0%;
+	height: 50%;
+	width: 1px;
+	background: #181818;
+	z-index: -2;
+	pointer-events: none;
+}
+
+.workBoxes a:nth-child(even):after,
+.workBoxes a:nth-child(even):before{
+	content: '';
+	position: absolute;
+	right: -25%;
+	top: 0%;
+	height: 50%;
+	width: 1px;
+	background: #181818;
+	z-index: -2;
+}
+.workBoxes a:nth-child(n):after{
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition:all ease-out 0.8s;
+}
+.element_show:nth-child(n):after{
+	transform: scaleY(1)!important;
+}
+.workBoxes a:nth-child(even):before,
+.workBoxes a:nth-child(odd):before{
+	z-index: -1;
+	background: #fff;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: all ease-out 0.8s;
+}
+.workBoxes a:nth-child(even):hover:before,
+.workBoxes a:nth-child(odd):hover:before{
+	transform: scaleY(1);
+	transition: all ease-out 4s;
+}
+.workBoxes a{
+	height: 400px;
+	width: 40%;
+	overflow:visible;
+}
+
+.workBoxes div{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+	transition:all ease-out 0.8s;
+	transition-delay: 0s;
+}
+
+.workBoxes h2{
+	font-size: 1.6em;
+	transform:translate(0%, 0px);
+	top: 250px;
+	padding: 5px 0px;
+}
+.workBoxes p{
+	transform:translate(0%, 0px);
+	font-size: 0.8em;
+	top: 210px;
+	padding: 5px 0px 15px 0px;
+}
+.workBoxes a:nth-child(odd) h2,
+.workBoxes a:nth-child(odd) p{
+	left: -30%;
+}
+.workBoxes a:nth-child(even) h2,
+.workBoxes a:nth-child(even) p{
+	right: -30%;
+	text-align: right;
+}
+.workBoxes a:hover h2,
+.workBoxes a:hover p{
+  transform: translate(0%, 0px);
+}
+.worklinksbg{
+	height: 100%;
+	width: auto;
+}
+.workBoxes a:hover .worklinksbg{
+  transform:scale(1);
+  opacity: 1;
+}
+.workBoxes a:nth-child(even) .worklinksbg{
+	right: 0!important;
+	left: auto;
+}
+.workBoxes a:nth-child(1){
+	left: 60%;
+	top: 0px;
+}
+.workBoxes a:nth-child(2){
+	left: 0%;
+	top: 300px;
+}
+.workBoxes a:nth-child(3){
+	left: 60%;
+	top: 600px;
+}
+.workBoxes a:nth-child(4){
+	left: 0%;
+	top: 900px;
+}
+.workBoxes a:nth-child(5){
+	left: 60%;
+	top: 1200px;
+}
+.workBoxes a:nth-child(6){
+	left: 0%;
+	top: 1500px;
+}
+.workBoxes a:nth-child(7){
+	left: 60%;
+	top: 1800px;
+}
+.workBoxes a:nth-child(8){
+	left: 0%;
+	top: 2100px;
+}
+.workBoxes a:nth-child(9){
+	left: 60%;
+	top: 2400px;
+}
+
+.workBoxes a:nth-child(10){
+	left: 0%;
+	top: 2700px;
+}
+.workBoxes a:nth-child(11){
+	left: 60%;
+	top: 3000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 730px){
+	.work{
+		top: 60px;
+		height: 4700px;
+		text-align: left;
+	}
+	.work h2{
+		letter-spacing: 2px;
+		font-size: 2.5em;
+		margin-left: 50px;
+	}
+
+	.work p{
+		transition-delay: 0.3s;
+		margin-left: 50px;
+		letter-spacing: 5px;
+	}
+
+	.workBoxes h2,
+	.workBoxes p{
+		margin: 0;
+	}
+
+	.workBoxes{
+		width: 100%;
+		top: 50px;
+	}
+	.workBoxes a:nth-child(odd):after,
+	.workBoxes a:nth-child(odd):before{
+		left: 50%;
+		top: 330px;
+		height: 50px;
+	}
+
+	.workBoxes a:nth-child(even):after,
+	.workBoxes a:nth-child(even):before{
+		right: 0%;
+		left: 50%;
+		top: 330px;
+		height: 50px;
+	}
+
+	.workBoxes a{
+		height: 250px;
+		width: 100%;
+	}
+
+	.workBoxes h2{
+		font-size: 1.1em;
+		top: 285px;
+		left: 50%;
+		right: 0;
+		padding: 5px 0px;
+	}
+	.workBoxes p{
+		font-size: 0.7em;
+		top: 260px;
+		left:50%;
+		right: 0;
+		padding: 5px 0px 15px 0px;
+	}
+	.workBoxes a:nth-child(odd) h2,
+	.workBoxes a:nth-child(odd) p{
+		left: 0;
+		text-align: center;
+	}
+	.workBoxes a:nth-child(even) h2,
+	.workBoxes a:nth-child(even) p{
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	.worklinksbg{
+		width: 100%;
+		left: 0;
+		height: auto;
+		bottom: 0!important;
+		top:auto;
+	}
+
+	.workBoxes a:nth-child(1){
+		left: 0%;
+		top: 100px;
+	}
+	.workBoxes a:nth-child(2){
+		left: 0%;
+		top: 500px;
+	}
+	.workBoxes a:nth-child(3){
+		left: 0%;
+		top: 900px;
+	}
+	.workBoxes a:nth-child(4){
+		left: 0%;
+		top: 1300px;
+	}
+	.workBoxes a:nth-child(5){
+		left: 0%;
+		top: 1700px;
+	}
+	.workBoxes a:nth-child(6){
+		left: 0%;
+		top: 2100px;
+	}
+	.workBoxes a:nth-child(7){
+		left: 0%;
+		top: 2500px;
+	}
+	.workBoxes a:nth-child(8){
+		left: 0%;
+		top: 2900px;
+	}
+	.workBoxes a:nth-child(9){
+		left: 0%;
+		top: 3300px;
+	}
+	.workBoxes a:nth-child(10){
+		left: 0%;
+		top: 3700px;
+	}
+	.workBoxes a:nth-child(11){
+		left: 0%;
+		top: 4100px;
+	}
+}
